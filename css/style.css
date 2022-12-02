@@ -1,0 +1,1022 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1407px;
+    margin: 0 auto;
+}
+/* ===========================
+      nav start
+============================== */
+nav{
+    padding-top: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+ nav .box{
+    display: flex;
+ }
+
+ nav .logo{
+    width: 20%;
+    align-self: center;
+ }
+
+ nav .nav-item{
+    width: 60%;   
+    display: flex;
+    align-items: center;
+ }
+
+ nav .nav-item ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+ }
+ nav .nav-item ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+ }
+
+ nav .nav-item ul i{
+    margin-left: 8px;
+
+ }
+
+ nav .button{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+   
+ }
+
+ nav .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+    
+ }
+
+ nav .button a{
+    transition: .4s;
+    background: #FF5538;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    padding: 14px 28px;
+    border-radius:18px;
+    display: inline-block;
+    align-items: center;
+   
+   
+ }
+ /* ===========================
+      nav end
+============================== */
+ /* ===========================
+     Banner start
+============================== */
+.banner .dot{
+    width: 50px;
+    height: 50px;
+    background: #C087EE;
+    position: absolute;
+    right: 344px;
+    top: 158px;
+    border-radius: 50%;
+    animation: myani2 2s infinite linear alternate;
+}
+
+@keyframes myani2{
+    from{
+        transform: translateY(-50px);
+    }to{
+        transform:translateY(0)
+    }
+}
+
+.banner .dot2{
+    width: 50px;
+    height: 50px;
+    background: #C087EE;
+    position: absolute;
+    left: 100px;
+    top: 300pxpx;
+    border-radius: 50%;
+    animation: myani3 2s infinite linear alternate;
+}
+
+@keyframes myani3{
+    from{
+        transform: translateY(-50px);
+    }to{
+        transform:translateY(0)
+    }
+}
+
+.banner .crose i{
+    color: #b705ed;
+    font-size: 50px;
+    position: absolute;
+    top: 200px;
+    right:120px;
+    animation: crose 2s infinite linear;
+
+}
+
+@keyframes crose{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.banner .crose2 i{
+    color: #b705ed;
+    font-size: 50px;
+    position: absolute;
+    bottom: 200px;
+    right:200px;
+    animation: crose2 2s infinite linear;
+
+}
+
+@keyframes crose2{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.banner .round-shap{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #FF5538;
+    border-radius: 50%;
+    position: absolute;
+    top: 97px;
+    left: 657px;
+    animation: myani 4s infinite linear;
+}
+
+.banner .round-shap .inner-shap{
+    width: 30px;
+    height: 30px;
+    background: #FF5538;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes myani{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.banner .round2-shap{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #FF5538;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    animation: myani 4s infinite linear;
+}
+
+.banner .round2-shap .inner-shap2{
+    width: 50px;
+    height: 50px;
+    background: #b705ed;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+}
+
+@keyframes myani{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+ .banner{
+    background: url(../images/banner.webp);   
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    position: relative;
+   
+ }
+
+ .banner h1{
+    width: 771px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    color:#29313D;
+   margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+ }
+
+ .banner p{
+    width: 547px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 44px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color:  #29313D;
+    text-align: center;
+    text-transform: capitalize;
+ }
+
+ .banner .button{
+    text-align: center;
+ }
+ 
+ .banner .button a{
+    transition: .4s;
+    background: #FF5538;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    padding: 14px 28px;
+    border-radius:18px;
+    display: inline-block;
+    margin-right: 24px;
+     
+ }
+
+ .banner .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+ }
+ 
+ /* ===========================
+      Banner end
+============================== */
+ /* ===========================
+     service start
+============================== */
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  
+
+}
+.service .item{
+    width: 32%;
+    background: #fff;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    box-shadow: 0px 7px 82px -6px rgba(0,0,0,0.1);
+    
+
+}
+.service .item h2{
+    width: 298px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 160%;
+    color: #29313D;
+    text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 34px;
+}
+.service .item .hhh{
+    width: 394px;
+}
+.service .item p{
+    width: 374px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #29313D;
+    text-transform: capitalize;
+}
+ /* ===========================
+      service end
+============================== */
+ /* ===========================
+      agency start
+============================== */
+.agency{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.agency .group3{
+    position: absolute;
+    left: -34px;
+    bottom: -360px;
+}
+
+.agency .box{
+    display: flex;
+}
+
+.agency .title p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FF5538;
+}
+
+.agency .title{
+    padding-left: 20px;
+}
+
+.agency .title h2{
+    width: 449px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    color: #29313D;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.agency .title p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FF5538;
+    text-transform: capitalize;
+   
+}
+
+ .agency .left{
+    width: 50%;  
+ }
+
+ .agency .left img{
+    position:relative;
+    top: 68px;
+    left: 88px;
+    width: 100%;
+    height: 460px;
+ }
+
+ .agency .right{
+    width: 50%;
+    background: url(../images/rightimg.webp) no-repeat;
+    background-size: cover;
+    padding: 100px 180px;
+   
+ }
+
+
+ .agency .right h3{
+    width: 570px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    color: #29313D;
+    text-transform: capitalize;
+ }
+
+ .agency .right p{
+    width: 501px;
+    font-family: 'Nunito', sans-serif;  
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #29313D;
+    margin-top: 20px;
+    margin-bottom: 48px;
+    text-transform: capitalize;
+ }
+
+ .agency .right .button a{
+    transition: .4s;
+    background: #FF5538;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    padding: 14px 28px;
+    border-radius:18px;
+    display: inline-block;
+   
+   
+ }
+
+ .agency .right .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+    
+ }
+
+ /* ===========================
+     agency end
+============================== */
+ /* ===========================
+   workproject start
+============================== */
+.workproject .box{
+    display: flex;
+    justify-content: space-between;
+}
+.workproject .left{
+    width: 70%;
+    margin-bottom: 60px;
+}
+.workproject .right{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+   
+}
+.workproject .title p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FF5538;
+    text-transform: capitalize;
+}
+
+.workproject .title h2{
+    width: 693px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    color: #29313D;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.workproject .right .button a{
+    transition: .4s;
+   
+    border: 1px solid #FF5538;
+    color: #FF5538;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    padding: 14px 28px;
+    border-radius:18px;
+    display: inline-block;
+    text-transform: capitalize;
+   
+   
+ }
+
+ .workproject .right .button a:hover{
+    background: #FF5538;
+    color: #fff;
+  
+ }
+
+ .workproject .leftwork{
+    width: 40%;
+    position: relative;
+    margin-bottom: 30px;
+   
+    
+ }
+ .workproject .text-item{
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    opacity: 0;
+    -webkit-box-shadow: 0px -10px 38px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px -10px 38px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px -10px 38px 0px rgba(0,0,0,0.2);
+    transition: .6s;
+ }
+ .workproject .leftwork:hover .text-item{
+    opacity: 1;
+    bottom: 0;
+ }
+ .workproject .rightwork:hover .text-item{
+    opacity: 1;
+    bottom: 0;
+ }
+ .workproject .text-item h3{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #29313D;
+    margin-bottom: 10px;
+ }
+ .workproject .text-item a{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FF5538;
+   
+ }
+
+ .workproject .rightwork{
+    width: 58%;
+    position: relative;
+    margin-bottom: 30px;
+ }
+
+ .workproject img{
+    width: 100%;
+    height: 332px;
+ }
+    
+ /* ===========================
+    workproject end
+============================== */
+ /* ===========================
+    counting start
+============================== */
+.counting .round-shap{
+    height: 130px;
+    width: 130px;
+    border: 1px solid #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 600px;
+    right: 340px;
+    animation: myani 4s infinite linear;
+}
+.counting .round-shap .inner-shap{
+    width: 40px;
+    height: 40px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+  
+}
+.counting{
+    background: url(../images/counting.webp) no-repeat center;
+    background-size:cover;
+    margin-top: 120px;
+    position: relative;
+}
+
+.counting .box{
+    display: flex;
+  
+}
+ .counting .count{
+    width: 50%;
+    display: flex;
+    padding: 120px 0;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+    
+}
+.counting .count .item{
+    width: 45%;
+    background: #fff;
+    padding: 96px;
+    text-align: center;
+    box-sizing: border-box;
+}
+ .counting .details{
+    width: 50%;
+    padding: 120px 0;
+    
+}
+.counting .details .title h4{
+    width: 570px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    color: #29313D;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.counting .details .title p{
+    width: 550px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #29313D;
+    text-transform: capitalize;
+}
+
+
+ .counting .count .item h3{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    color: #29313D;
+    margin-bottom: 8px;
+    
+ }
+ .counting .count .item p{
+    width: 140px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #29313D;
+
+ }
+
+ .counting .details .button a{
+    transition: .4s;
+    background: #FF5538;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    padding: 14px 28px;
+    border-radius:18px;
+    display: inline-block;
+    margin-top: 40px;
+   
+   
+ }
+
+ .counting .details .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+    
+ }
+
+
+ /* ===========================
+    counting end
+============================== */
+ /* ===========================
+    global start
+============================== */
+.global{
+    margin: 120px 0;
+}
+.global .title h3{
+    width: 849px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #29313D;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.global .box{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+
+ /* ===========================
+    global end
+============================== */
+ /* ===========================
+    customer start
+============================== */
+.customer .box{
+    display: flex;
+}
+.customer{
+    background: url(../images/customerback.webp) no-repeat center;
+    background-size: cover;
+
+}
+.customer .left .title h3{
+    width: 446px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #29313D;
+  
+}
+
+
+.customer .image-box {
+    display: flex;
+    column-gap: 28px;
+    margin: 60px 0;
+}
+
+
+.customer .left{
+    width: 50%;
+    padding: 123px 0;
+   
+}
+.customer p{
+    width: 690px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: rgba(41, 49, 61,.8);
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+ .customer .slider{
+    display: flex;
+    align-items: center;
+} 
+ .customer .slider h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: #29313D;
+    margin-right: 40px;
+  
+} 
+.customer .slider i{
+   width: 24px;
+   height: 24px;
+   background: #FFDDD7;
+   padding: 25px;
+   padding-top: 20px;
+   border-radius:10px;
+   color: #fff;
+   box-sizing: border-box;
+   line-height: 50%;
+   display: flex;
+   justify-content: center;
+   margin-right: 24px;
+   transition: .4s;
+  
+}
+.customer .slider i:hover{ 
+    background: #FF5538;
+    color: #fff;
+}
+.customer .right{
+    width: 50%;
+    text-align: center;
+    margin-top: 120px;
+  
+   
+}
+
+
+ /* ===========================
+    customer end
+============================== */
+
+ /* ===========================
+    talk customer start
+============================== */
+.talk{
+    background: url(../images/talkimg.webp);
+    padding: 100px 0;
+    position: relative;
+
+}
+.talk .talkimg img{
+    position: absolute;
+    top: 0px;
+    right: -53px;
+}
+ 
+.talk .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(41, 49, 61,.2);
+    padding-bottom: 48px;
+}
+
+.talk .left .title p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #29313D;
+    text-transform: capitalize;
+ }
+.talk .left .title h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    color: #29313D;
+    text-transform: capitalize;
+ }
+ .talk .right .button a{
+    transition: .4s;
+    background: #FF5538;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    padding: 14px 28px;
+    border-radius:18px;
+    display: inline-block;
+    margin-top: 40px;
+   position: relative;
+   z-index: 1;
+   
+ }
+ .talk .right .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+    
+ }
+ .talk .bottom{
+    width: 1283px;
+    margin-top: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(41, 49, 61,.4);
+ }
+
+
+ /* ===========================
+      talk customer end
+============================== */
+
+ /* ===========================
+     footer start
+============================== */
+.footer{
+    padding-top:140px;
+}
+
+ .footer .box{
+    display: flex;
+ 
+ }
+
+ .footer .item1{
+    width: 40%;
+ }
+
+ .footer .item1 p{
+    width: 449px;
+    margin-top: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(41, 49, 61,.8);
+ }
+
+ .footer .item2{
+    width: 20%;
+    text-align: center;
+ }
+ .footer .title h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #29313D;
+    text-transform: capitalize;
+    margin-bottom: 48px;
+ }
+
+ .footer  ul li{
+    font-family: 'Nunito', sans-serif;
+    color: rgba(41, 49, 61,.7);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 30px;
+ }
+
+ .footer .item3{
+    width: 20%;
+    text-align: center;
+ }
+
+ .footer .item4{
+    width: 20%;
+    text-align: right;
+ }
+
+ .footbottom {
+    padding: 2px 0;
+    padding-top: 53px;
+    
+ }
+
+.footbottom .box{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .footbottom .left{
+    width: 40%;
+ }
+
+ .footbottom .right{
+    width: 60%;
+  
+ }
+
+ .footbottom .left p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(41, 49, 61,.8);
+ }
+
+ .footbottom .right ul{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 60px;
+    
+ }
+
+ .footbottom .right ul li{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-transform: capitalize;
+    color: rgba(41, 49, 61,.8);
+    
+ }
+ /* ===========================
+      footer end
+============================== */
